@@ -1,16 +1,44 @@
 .App {
   text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.3fr 4fr 0.5fr;
+  grid-template-areas:
+  "navbar navbar"
+  "blog blog"
+  "footer footer";
+  gap: 1em;
+  min-height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navBar {
+  grid-area: navbar;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.blog {
+  grid-area: blog;
+  background-color: azure;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap:1em;
+
+}
+.blog-feed {
+  flex-grow: 1;
+  background-color:#F4BFDB;
+  width: 20em;
+}
+.create-blog {
+  flex-grow: 1;
+  background-color: paleturquoise;
+  width: 20em;
+}
+.footer {
+  grid-area: footer;
+  background-color: #000009;
+  color: white;
 }
 
 .App-header {
@@ -24,15 +52,15 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.spinner-container {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  min-height: 50em;
+  background-color: whitesmoke;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
