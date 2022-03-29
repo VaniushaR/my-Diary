@@ -10,8 +10,12 @@ const useFetch = (url) => {
     setTimeout( () => { 
      fetch(url)
      .then(res => {
-       if(!res.ok) {
-         setLogError(res.status)}
+      console.log(res)
+       if(res.ok) {
+         console.log(res)
+        
+         //setLogError(res.status)
+         }
         // throw Error('Error fetching the Data')}
        return res.json()})
      .then(data => {
@@ -20,11 +24,10 @@ const useFetch = (url) => {
      })
      .catch( err => {
        console.log(err)
+       setPending(false)
        setLogError(err)
      })
    }, 1000)
- 
- 
    },[])
 
    return {data, isPending, logError}

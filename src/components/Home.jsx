@@ -7,6 +7,7 @@ import { useFetch } from "./customHooks/useFetch";
 
 const Home = () => {
   const {data: blogs, isPending, logError} = useFetch('http://localhost:8000/blogs')
+  
   const useStyles = makeStyles(appStyles)
 
   //Delete Function
@@ -26,9 +27,12 @@ const Home = () => {
           
           </Container>) :
         ( logError ? (
-          <Container className="spinner-container">  
+          <Container className="error-cont">  
          
-            <h4>Un error conectando con el server ha ocurrido... {logError}</h4>
+            <h4> An error while trying to connect with server has occured.  </h4>
+            <p>After cloning and installing this app, raise server:
+              <code>npx json-server --watch data/db.json --port 8000</code>
+            </p>
           
           </Container>
         ) : (

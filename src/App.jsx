@@ -1,11 +1,15 @@
-
 import './App.css';
 import {Navigation} from './components/Navigation'
 //import { Route, Routes} from "react-router-dom";
 import {Home} from './components/Home'
+import { Author } from './components/Author';
+import {Memories} from './components/Memories'
 //theme
 import { createTheme, ThemeProvider} from '@material-ui/core'
 //import { ThemeProvider, createTheme } from '@mui/material/styles';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BlogEntry } from './components/BlogEntry.jsx';
+
 export const theme = createTheme({
   palette: {
     primary: {
@@ -29,18 +33,24 @@ export const theme = createTheme({
 
 function App() {
   return (
+  <Router>
     <ThemeProvider theme={theme}>
     <div className="App">
      <div className="navBar"> 
       <Navigation/>
       </div>
      <div className="blog">
-      <Home/>
-
+     <Routes>
+       <Route index path="/my-Diary/" element={<Home/>}></Route>
+       <Route path="/my-Diary/author" element={<Author/>}></Route>
+       <Route path="/my-Diary/memories" element={<Memories/>}></Route>
+       <Route path="/my-Diary/:id" element={<BlogEntry />}></Route>
+      </Routes>
      </div>
      <div className="footer">footer</div>
     </div>
     </ThemeProvider>
+  </Router>
   );
 }
 
