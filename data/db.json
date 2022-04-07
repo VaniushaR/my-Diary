@@ -1,13 +1,34 @@
-{ "blogs": [
-  {"id": "1", 
-    "title": "Khale Adventures chapter 1", 
-    "description": "Khalesh meet her worst enemy ever, the baset hound neighbor", 
-    "body":"Lorem Khale sit amem... Lorem Khale sit amem. Lorem Khale sit amem, Lorem Khale sit amem, Lorem Khale sit amem Lorem Khale sit amem... Lorem Khale sit amem. Lorem Khale sit amem. Lorem Khale sit amem, Lorem Khale sit amem: Lorem Khale sit amem. Lorem Khale sit amem? Lorem Khale sit amem... Lorem Khale sit amem.Lorem Khale sit amem. Lorem Khale sit amem. Lorem Khale sit amem."},
-  {"id": "2", 
-    "title": "Khale Adventures chapter 2", 
-    "description": "Khalesh find on the same street her worst enemy ever, the baset hound neighbor who was with his full gang", 
-    "body":"Lorem Khale sit amem... Lorem Khale sit amem. Lorem Khale sit amem, Lorem Khale sit amem, Lorem Khale sit amem Lorem Khale sit amem... Lorem Khale sit amem. Lorem Khale sit amem. Lorem Khale sit amem, Lorem Khale sit amem: Lorem Khale sit amem. Lorem Khale sit amem? Lorem Khale sit amem... Lorem Khale sit amem.Lorem Khale sit amem. Lorem Khale sit amem. Lorem Khale sit amem."
-  },
-  {"id": "3", "title": "Khale Adventures chapter 3", "description": "Khalesh bark and try to attack to her worst enemy ever, the baset hound neighbor while all his gang was trying to attack her as well.", "body":"Lorem Khale sit amem... Lorem Khale sit amem. Lorem Khale sit amem, Lorem Khale sit amem, Lorem Khale sit amem Lorem Khale sit amem... Lorem Khale sit amem. Lorem Khale sit amem. Lorem Khale sit amem, Lorem Khale sit amem: Lorem Khale sit amem. Lorem Khale sit amem? Lorem Khale sit amem... Lorem Khale sit amem.Lorem Khale sit amem. Lorem Khale sit amem. Lorem Khale sit amem."}
+{
+  "blogs": [
+    {
+      "id": "2",
+      "title": "Khale Adventures Chapter TWO",
+      "subtitle": "How the wolf dog meet her best friend",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "author": "Vania R",
+      "date": "6 april 2022"
+    },
+    {
+      "id": "3",
+      "title": "Khale Adventures Chapter three",
+      "subtitle": "How the wolf dog meet her best friend",
+      "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "author": "Vania R",
+      "date": "6 april 2022"
+    },
+    {
+      "title": "Khale Adventures Chapter Four",
+      "subtitle": "How the dog find her favorite place in the city",
+      "content": "Lorem ipsum dolor sit amet, consectetur ... onRender Callback The Profiler requires an onRender function as a prop. React calls this function any time a component within the profiled tree “commits” an update. It receives parameters describing what was rendered and how long it took.",
+      "id": "vhd1b3-"
+    },
+    {
+      "title": "Hola",
+      "subtitle": "Hola C",
+      "content": "Node.js files must be initiated in the \"Command Line Interface\" program of your computer.  How to open the command line interface on your computer depends on the operating system. For Windows users, press the start button and look for \"Command Prompt\", or simply write \"cmd\" in the search field.  Navigate to the folder that contains the file \"myfirst.js\", the command line interface window should look something like this:",
+      "id": "930",
+      "author": "Anonimous",
+      "date": "6/4/2022 14:17:20"
+    }
   ]
 }

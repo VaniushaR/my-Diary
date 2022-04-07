@@ -10,6 +10,10 @@ import { createTheme, ThemeProvider} from '@material-ui/core'
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { BlogEntry } from './components/BlogEntry.jsx';
 
+import { useFetch2 } from './components/customHooks/useFetch2';
+import { NotFound } from './components/customHooks/NotFound';
+import { Footer } from './Footer';
+
 export const theme = createTheme({
   palette: {
     primary: {
@@ -32,8 +36,9 @@ export const theme = createTheme({
 })
 
 function App() {
-  return (
-  <Router>
+
+  return(
+<Router>
     <ThemeProvider theme={theme}>
     <div className="App">
      <div className="navBar"> 
@@ -45,13 +50,40 @@ function App() {
        <Route path="/my-Diary/author" element={<Author/>}></Route>
        <Route path="/my-Diary/memories" element={<Memories/>}></Route>
        <Route path="/my-Diary/:id" element={<BlogEntry />}></Route>
+       <Route path="/*" element={<NotFound/>}></Route>
       </Routes>
      </div>
-     <div className="footer">footer</div>
+     <div className="footer">
+       <Footer/>
+     </div>
     </div>
     </ThemeProvider>
   </Router>
-  );
+  )
+  
+
 }
 
 export default App;
+/*
+
+  const urlUsers = "https://jsonplaceholder.typicode.com/users"
+  const urlImg = "https://jsonplaceholder.typicode.com/photos"
+  const [data, setData] = useFetch2(urlImg)
+  console.log(data)
+
+  return (
+    <>
+  <h1>App React</h1>
+  {data.map((item) => {
+    return(
+      <div key={item.id}>
+        <h2 >{item.title}</h2>
+        <img src={item.url}/>
+      </div>
+    )}
+  )}
+  </>
+  );
+
+ */

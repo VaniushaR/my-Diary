@@ -23,22 +23,29 @@
   justify-content: center;
   align-items: stretch;
   gap:1em;
-
 }
+
 .blog-feed {
   flex-grow: 1;
   background-color:#F4BFDB;
   width: 20em;
 }
+
 .create-blog {
   flex-grow: 1;
   background-color: paleturquoise;
   width: 20em;
 }
+
 .footer {
   grid-area: footer;
   background-color: #000009;
   color: white;
+  font-weight: 700;
+}
+
+.footer a {
+  color: turquoise;
 }
 
 .App-header {
@@ -72,3 +79,29 @@
 a {
   text-decoration: none;
 }
+
+.new-entry {
+  padding: 0.5em;
+}
+
+.new-entry-card {
+  display: flex;
+  flex-flow: row wrap;
+  align-items:stretch;
+  justify-content: center;
+  gap: 1em;
+  padding: 1em;
+}
+
+.new-entry-input {
+  width: 80%;
+}
+
+#entry-content {
+  height: 7em;
+}
+
+.select-new-entry {
+  width: 100%;
+}
+

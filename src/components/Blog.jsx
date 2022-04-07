@@ -4,7 +4,7 @@ import EditIcon from '@material-ui/icons/Edit';
 import { Link } from "react-router-dom";
 import { EntryCard } from "./EntryCard";
 
-const Blog = ({blogs, useStyles, handleDelete}) => {
+const Blog = ({blogs, useStyles}) => {
   console.log(blogs)
 
   const classes = useStyles()
